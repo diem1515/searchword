@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/diem1515/searchword.git/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/diem1515/searchword.git/static/js/main.a122d343.chunk.js",
-    "main.js.map": "/diem1515/searchword.git/static/js/main.a122d343.chunk.js.map",
-    "runtime-main.js": "/diem1515/searchword.git/static/js/runtime-main.86aa9dd0.js",
-    "runtime-main.js.map": "/diem1515/searchword.git/static/js/runtime-main.86aa9dd0.js.map",
-    "static/js/2.fae8ee76.chunk.js": "/diem1515/searchword.git/static/js/2.fae8ee76.chunk.js",
-    "static/js/2.fae8ee76.chunk.js.map": "/diem1515/searchword.git/static/js/2.fae8ee76.chunk.js.map",
-    "static/js/3.37eefe0d.chunk.js": "/diem1515/searchword.git/static/js/3.37eefe0d.chunk.js",
-    "static/js/3.37eefe0d.chunk.js.map": "/diem1515/searchword.git/static/js/3.37eefe0d.chunk.js.map",
-    "index.html": "/diem1515/searchword.git/index.html",
-    "static/css/main.ab7136cd.chunk.css.map": "/diem1515/searchword.git/static/css/main.ab7136cd.chunk.css.map",
-    "static/js/2.fae8ee76.chunk.js.LICENSE.txt": "/diem1515/searchword.git/static/js/2.fae8ee76.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/diem1515/searchword.git/static/media/logo.6ce24c58.svg"
+    "main.css": "/diem1515/searchword/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/diem1515/searchword/static/js/main.1b1625aa.chunk.js",
+    "main.js.map": "/diem1515/searchword/static/js/main.1b1625aa.chunk.js.map",
+    "runtime-main.js": "/diem1515/searchword/static/js/runtime-main.8b6fb57c.js",
+    "runtime-main.js.map": "/diem1515/searchword/static/js/runtime-main.8b6fb57c.js.map",
+    "static/css/2.95f25948.chunk.css": "/diem1515/searchword/static/css/2.95f25948.chunk.css",
+    "static/js/2.39625b3a.chunk.js": "/diem1515/searchword/static/js/2.39625b3a.chunk.js",
+    "static/js/2.39625b3a.chunk.js.map": "/diem1515/searchword/static/js/2.39625b3a.chunk.js.map",
+    "static/js/3.119c9d63.chunk.js": "/diem1515/searchword/static/js/3.119c9d63.chunk.js",
+    "static/js/3.119c9d63.chunk.js.map": "/diem1515/searchword/static/js/3.119c9d63.chunk.js.map",
+    "index.html": "/diem1515/searchword/index.html",
+    "static/css/2.95f25948.chunk.css.map": "/diem1515/searchword/static/css/2.95f25948.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/diem1515/searchword/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.39625b3a.chunk.js.LICENSE.txt": "/diem1515/searchword/static/js/2.39625b3a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.86aa9dd0.js",
-    "static/js/2.fae8ee76.chunk.js",
-    "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.a122d343.chunk.js"
+    "static/js/runtime-main.8b6fb57c.js",
+    "static/css/2.95f25948.chunk.css",
+    "static/js/2.39625b3a.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.1b1625aa.chunk.js"
   ]
 }
