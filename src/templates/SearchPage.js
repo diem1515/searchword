@@ -95,7 +95,9 @@ function SearchPage() {
                                 <MyVerticallyCenteredModal show={modalShow}
                                     onHide={() => setModalShow(false)}
                                     name={word.name}
-                                    text={word.text} />
+                                    text={word.text}
+                                    key={word.id}
+                                />
                             ))}
                         </span>
                     </div>
@@ -109,7 +111,8 @@ function SearchPage() {
                                 <SearchItem class="list-group-item"
                                     key={word.id}
                                     name={word.name}
-                                    text={word.text} />
+                                    text={word.text}
+                                    id={word.id} />
                             ))}
 
 

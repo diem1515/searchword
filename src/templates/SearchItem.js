@@ -39,7 +39,7 @@ function MyVerticallyCenteredModal(props) {
 }
 
 
-function SearchItem({ name, text }) {
+function SearchItem({ name, text, id }) {
     const [modalShow, setModalShow] = React.useState(false);
 
     return (
@@ -51,12 +51,9 @@ function SearchItem({ name, text }) {
                     onHide={() => setModalShow(false)}
                     name={name}
                     text={text}
-
+                    key={id}
                 />
             </Text>
-
-
-
         </div>
 
 
