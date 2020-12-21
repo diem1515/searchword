@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Navbar, Nav, Modal, Button } from 'react-bootstrap';
 import { useRealState } from '../realContext';
 import SearchItem from './SearchItem'
+import { MdAdd } from "react-icons/md";
 
 
 
@@ -17,6 +18,39 @@ const HeadBlock = styled.div`
     margin-right:10px;
 }
   
+`;
+
+const CircleButton = styled.button`
+  background: #38d9a9;
+  &:hover {
+    background: #63e6be;
+  }
+  &:active {
+    background: #20c997;
+  }
+
+  
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: block;
+  align-items: center;
+  margin: 10px auto;
+//   justify-content: center;
+  font-size: 60px;
+//   position: absolute;
+//   left: 50%;
+//   bottom: 0px;
+//   transform: translate(-50%, 50%);
+  color: white;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+
 `;
 
 function MyVerticallyCenteredModal(props) {
@@ -47,13 +81,17 @@ function MyVerticallyCenteredModal(props) {
 
 let searchState = null;
 
+
 function SearchPage() {
     const state = useRealState();
     const [modalShow, setModalShow] = React.useState(false);
     const [value, setValue] = useState("")
+    const [nextId, setNextId] = useState(20)
     const onChange = (e) => {
         setValue(e.target.value)
-
+    }
+    const increseNum = () => {
+        setNextId(nextId + 20)
     }
 
     if (value) {
@@ -65,6 +103,7 @@ function SearchPage() {
     else {
         searchState = state
     }
+
 
 
 
@@ -107,18 +146,39 @@ function SearchPage() {
 
                     <div class="panel-body" >
                         <ul class="list-group" >
-                            {searchState.map((word) => (
+                            {/* {
+                                (() => {
+                                    for (let i = 0; i < 10; i++) {
+                                        <SearchItem class="list-group-item"
+                                            key={searchState[i].id}
+                                            name={searchState[i].name}
+                                            text={searchState[i].text}
+                                            id={searchState[i].id}
+                                        />
+                                    }
+                                })
+                            } */}
+                            {searchState.filter((word) => (
+                                word.id < nextId
+                            )).map((word) => (
                                 <SearchItem class="list-group-item"
                                     key={word.id}
                                     name={word.name}
                                     text={word.text}
                                     id={word.id} />
                             ))}
-
-
                         </ul>
                     </div>
                 </div>
+
+                <CircleButton onClick={() => increseNum()}>
+                    <MdAdd />
+                </CircleButton>
+
+                {/* <div className="container">
+                    <MdAdd />
+                    <button className="btn btn-primary" type="button" onClick={() => increseNum()}>go!</button>
+                </div> */}
             </HeadBlock>
         </div>
     );
