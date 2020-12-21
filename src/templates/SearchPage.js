@@ -89,8 +89,14 @@ function SearchPage() {
     const [nextId, setNextId] = useState(20)
     const onChange = (e) => {
         setValue(e.target.value)
+        setNextId(state.length)
+        if (!e.target.value) {
+            setNextId(20)
+        }
     }
+
     const increseNum = () => {
+
         setNextId(nextId + 20)
     }
 
@@ -101,12 +107,9 @@ function SearchPage() {
         }
     }
     else {
+
         searchState = state
     }
-
-
-
-
 
     return (
         <div>
@@ -119,16 +122,16 @@ function SearchPage() {
                     </Nav>
                 </Navbar>
 
-                <div class="col-sm-12">
-                    <div class="input-group">
+                <div className="col-sm-12">
+                    <div className="input-group">
                         <input
                             type="text"
-                            class="form-control"
+                            className="form-control"
                             onChange={onChange}
                             value={value}
                             placeholder="Search for..." />
-                        <span class="input-group-btn">
-                            <button class="btn btn-primary" type="button" onClick={() => setModalShow(true)}>go!</button>
+                        <span className="input-group-btn">
+                            <button className="btn btn-primary" type="button" onClick={() => setModalShow(true)}>go!</button>
 
                             {searchState.map((word) => (
                                 <MyVerticallyCenteredModal show={modalShow}
@@ -142,10 +145,10 @@ function SearchPage() {
                     </div>
                 </div>
 
-                <div class="panel panel-primary">
+                <div className="panel panel-primary">
 
-                    <div class="panel-body" >
-                        <ul class="list-group" >
+                    <div className="panel-body" >
+                        <ul className="list-group" >
                             {/* {
                                 (() => {
                                     for (let i = 0; i < 10; i++) {
@@ -161,7 +164,7 @@ function SearchPage() {
                             {searchState.filter((word) => (
                                 word.id < nextId
                             )).map((word) => (
-                                <SearchItem class="list-group-item"
+                                <SearchItem className="list-group-item"
                                     key={word.id}
                                     name={word.name}
                                     text={word.text}

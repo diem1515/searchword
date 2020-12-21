@@ -50,7 +50,7 @@ function SearchItem({ name, text, id }) {
     return (
         <div>
             <Text>
-                <li class="list-group-item" onClick={() => setModalShow(true)}> {name}</li>
+                <li className="list-group-item" onClick={() => setModalShow(true)}> {name}</li>
                 <MyVerticallyCenteredModal
                     show={modalShow}
                     onHide={() => setModalShow(false)}
@@ -58,7 +58,7 @@ function SearchItem({ name, text, id }) {
                     text={text}
                     key={id}
                 >
-                    <ins class="kakao_ad_area"
+                    <ins className="kakao_ad_area"
                         data-ad-unit="DAN-r6Vr582sLtbR1SiV"
                         data-ad-width="728"
                         data-ad-height="90"></ins>
